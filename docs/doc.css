@@ -77,8 +77,3 @@ BODY {
     text-transform: uppercase;
 }
 
-.iconGallerie::after {
-    content: "\e90d";
-    font-size: 40px;
-    font-family: 'icomoon' !important;
-}
