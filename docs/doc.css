@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./../assets/font/icomoon/fonts/icomoon.eot?sz538m');
+    src:  url('./../assets/font/icomoon/fonts/icomoon.eot?sz538m#iefix') format('embedded-opentype'),
+    url('./../assets/font/icomoon/fonts/icomoon.ttf?sz538m') format('truetype'),
+    url('./../assets/font/icomoon/fonts/icomoon.woff?sz538m') format('woff'),
+    url('./../assets/font/icomoon/fonts/icomoon.svg?sz538m#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 BODY {
     background-image: linear-gradient(to right, rgba(0, 132, 255, 1), rgba(0, 132, 255, 0.8));
     font-family: 'Roboto', sans-serif;
@@ -40,4 +51,34 @@ BODY {
 .logo {
     width: 100%;
     height: 200px;
+}
+
+.boutonMenu {
+    text-align: center;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgba(13,71,161 ,0.8), rgba(13,71,161 ,1));
+    padding: 10px 0px;
+}
+
+.boutonMenu:hover {
+    box-shadow: 2px 2px 10px -5px rgba(200, 200, 200, 0.8);
+}
+
+a {
+    color: #eeeeee;
+    text-decoration: none;
+    user-select: none;
+}
+
+.libelle {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.iconGallerie::after {
+    content: "\e90d";
+    font-size: 40px;
+    font-family: 'icomoon' !important;
 }
