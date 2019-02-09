@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "FugazOne";
+    src: url("./assets/font/FugazOne-Regular.ttf") format("ttf");
+}
+
+#body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    background-color: #05e800;
+}
+
+.bandeauMatch {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 100px;
+}
+
+.bandeauJoueur1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+#persoJ1 {
+    position: absolute;
+    top: 22px;
+    left: 440px;
+    z-index: 10;
+    width: 30px;
+}
+
+#nomJoueur1 {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    width: 500px;
+    background-color: #eeeeee;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px 0px;
+    font-family: "FugazOne", sans-serif;
+    box-shadow: -5px 5px 0px 0px rgba(0, 119, 181, 1);
+}
+
+#scoreJoueur1 {
+    position: absolute;
+    top: -4px;
+    right: 530px;
+    background-color: rgba(44, 62, 80, 1);
+    color: #eeeeee;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px 0px;
+    font-family: "FugazOne", sans-serif;
+    box-shadow: 5px 5px 0px 0px rgba(0, 119, 181, 1);
+    width: 40px;
+    z-index: 7;
+}
+
+.shadowContainerCommun {
+    position: absolute;
+    top: 15px;
+    left: 885px;
+    width: 150px;
+    height: 60px;
+    background-color: rgba(38,50,56 ,1);
+    z-index: 100;
+}
+
+.shadowContainerCommun:before {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    left: -60px;
+    width: 0px;
+    height: 0px;
+    border-top: solid rgba(38,50,56 ,1) 40px;
+    border-right: solid rgba(38,50,56 ,1) 20px;
+    border-left: solid transparent 40px;
+    border-bottom: solid transparent 20px;
+    z-index: 100;
+}
+.shadowContainerCommun:after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    width: 0px;
+    height: 0px;
+    border-top: solid rgba(38,50,56 ,1) 40px;
+    border-left: solid rgba(38,50,56 ,1) 20px;
+    border-right: solid transparent 40px;
+    border-bottom: solid transparent 20px;
+    z-index: 100;
+}
+
+.bandeauExplicationMatch {
+    position: absolute;
+    top: 5px;
+    left: 885px;
+    width: 150px;
+    height: 60px;
+    background-color: rgba(96,125,139 ,1);
+    z-index: 100;
+}
+
+.bandeauExplicationMatch:before {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    left: -60px;
+    width: 0px;
+    height: 0px;
+    border-top: solid rgba(96,125,139 ,1) 40px;
+    border-right: solid rgba(96,125,139 ,1) 20px;
+    border-left: solid transparent 40px;
+    border-bottom: solid transparent 20px;
+    z-index: 100;
+}
+.bandeauExplicationMatch:after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    width: 0px;
+    height: 0px;
+    border-top: solid rgba(96,125,139 ,1) 40px;
+    border-left: solid rgba(96,125,139 ,1) 20px;
+    border-right: solid transparent 40px;
+    border-bottom: solid transparent 20px;
+    z-index: 100;
+}
+
+#titreMatch {
+    color: #eeeeee;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 10px;
+    text-align: center;
+    font-family: "FugazOne", sans-serif;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+#boMatch {
+    color: #eeeeee;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 5px;
+    text-align: center;
+    font-family: "FugazOne", sans-serif;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.bandeauJoueur2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+#nomJoueur2 {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 500px;
+    background-color: #eeeeee;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px 0px;
+    font-family: "FugazOne", sans-serif;
+    box-shadow: 5px 5px 0px 0px rgba(0, 119, 181, 1);
+}
+
+#persoJ2 {
+    position: absolute;
+    top: 22px;
+    right: 440px;
+    z-index: 10;
+    width: 30px;
+}
+
+#scoreJoueur2 {
+    position: absolute;
+    top: -4px;
+    left: 530px;
+    background-color: rgba(44, 62, 80, 1);
+    color: #eeeeee;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px 0px;
+    font-family: "FugazOne", sans-serif;
+    box-shadow: -5px 5px 0px 0px rgba(0, 119, 181, 1);
+    width: 40px;
+    z-index: 7;
+}

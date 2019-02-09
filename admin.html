@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="./assets/logo%20series/Smash.svg"/>
+    <title>Admin | Smash Bros Ultimate View</title>
+    <link rel="stylesheet" type="text/css" href="./admin/admin.css">
+</head>
+<body>
+
+<div id="containerListePersonnages"></div>
+
+<div class="containerActions">
+    <div class="containerJ1" style="overflow: hidden;">
+        <img id="imgFondJ1" style="position: absolute; top:25px; right:0; opacity: 0.4;"/>
+        <div style="position: absolute; top:0; left:0; width:100%;">
+            <div class="nomJoueur1">Joueur 1</div>
+            <div>
+                <div class="titreJ1">Nom</div>
+                <input onchange="nomJ1 = this.value"/>
+            </div>
+            <div>
+                <div class="titreJ1">Score</div>
+                <input onchange="scoreJ1 = this.value"/>
+            </div>
+            <div onclick="selectPerso(1)">
+                <div class="titreJ1 btnPersonnage">Personnage</div>
+                <div id="persoJ1"></div>
+            </div>
+            <div>
+                <div class="titreJ1" style="display: block;">Chroma</div>
+                <div style="text-align: center;">
+                    <div class="divChroma chromaJ1NonSelected" id="chroma11"
+                         onclick="selectChroma('chroma11', 'imgChroma11', 1)">
+                        <img id="imgChroma11"/>
+                    </div>
+                    <div class="divChroma chromaJ1NonSelected" id="chroma12"
+                         onclick="selectChroma('chroma12', 'imgChroma12', 1)">
+                        <img id="imgChroma12"/>
+                    </div>
+                    <div class="divChroma chromaJ1NonSelected" id="chroma13"
+                         onclick="selectChroma('chroma13', 'imgChroma13', 1)">
+                        <img id="imgChroma13"/>
+                    </div>
+                    <div class="divChroma chromaJ1NonSelected" id="chroma14"
+                         onclick="selectChroma('chroma14', 'imgChroma14', 1)">
+                        <img id="imgChroma14"/>
+                    </div>
+                    <div class="divChroma chromaJ1NonSelected" id="chroma15"
+                         onclick="selectChroma('chroma15', 'imgChroma15', 1)">
+                        <img id="imgChroma15"/>
+                    </div>
+                    <div class="divChroma chromaJ1NonSelected" id="chroma16"
+                         onclick="selectChroma('chroma16', 'imgChroma16', 1)">
+                        <img id="imgChroma16"/>
+                    </div>
+                    <div class="divChroma chromaJ1NonSelected" id="chroma17"
+                         onclick="selectChroma('chroma17', 'imgChroma17', 1)">
+                        <img id="imgChroma17"/>
+                    </div>
+                    <div class="divChroma chromaJ1NonSelected" id="chroma18"
+                         onclick="selectChroma('chroma18', 'imgChroma18', 1)">
+                        <img id="imgChroma18"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="titreJ1">Couleur</div>
+                <input type="color" onchange="couleurJ1 = this.value"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerCommun">
+        <div style="margin-top: 46px;">
+            <div class="titreCommun">Titre match</div>
+            <input onchange="nomMatch = this.value"/>
+        </div>
+        <div>
+            <div class="titreCommun">BO</div>
+            <input onchange="bo = this.value"/>
+        </div>
+        <div style="text-align: center">
+            <button onclick="sendPreview()" class="buttonCommun">Envoyer en preview</button>
+        </div>
+        <div style="text-align: center">
+            <button onclick="sendStream()" class="buttonCommun">Envoyer au stream</button>
+        </div>
+    </div>
+
+    <div class="containerJ2" style="overflow: hidden;">
+        <img id="imgFondJ2" style="position: absolute; top:25px; right:0; opacity: 0.4;"/>
+        <div style="position: absolute; top:0; left:0; width:100%;">
+            <div class="nomJoueur2">Joueur 2</div>
+            <div>
+                <div class="titreJ2">Nom</div>
+                <input onchange="nomJ2 = this.value"/>
+            </div>
+            <div>
+                <div class="titreJ2">Score</div>
+                <input onchange="scoreJ2 = this.value"/>
+            </div>
+            <div onclick="selectPerso(2)">
+                <div class="titreJ2 btnPersonnage">Personnage</div>
+                <div id="persoJ2"></div>
+            </div>
+            <div>
+                <div class="titreJ2" style="display: block;">Chroma</div>
+                <div style="text-align: center;">
+                    <div class="divChroma chromaJ2NonSelected" id="chroma21"
+                         onclick="selectChroma('chroma21', 'imgChroma21', 2)">
+                        <img id="imgChroma21"/>
+                    </div>
+                    <div class="divChroma chromaJ2NonSelected" id="chroma22"
+                         onclick="selectChroma('chroma22', 'imgChroma22', 2)">
+                        <img id="imgChroma22"/>
+                    </div>
+                    <div class="divChroma chromaJ2NonSelected" id="chroma23"
+                         onclick="selectChroma('chroma23', 'imgChroma23', 2)">
+                        <img id="imgChroma23"/>
+                    </div>
+                    <div class="divChroma chromaJ2NonSelected" id="chroma24"
+                         onclick="selectChroma('chroma24', 'imgChroma24', 2)">
+                        <img id="imgChroma24"/>
+                    </div>
+                    <div class="divChroma chromaJ2NonSelected" id="chroma25"
+                         onclick="selectChroma('chroma25', 'imgChroma25', 2)">
+                        <img id="imgChroma25"/>
+                    </div>
+                    <div class="divChroma chromaJ2NonSelected" id="chroma26"
+                         onclick="selectChroma('chroma26', 'imgChroma26', 2)">
+                        <img id="imgChroma26"/>
+                    </div>
+                    <div class="divChroma chromaJ2NonSelected" id="chroma27"
+                         onclick="selectChroma('chroma27', 'imgChroma27', 2)">
+                        <img id="imgChroma27"/>
+                    </div>
+                    <div class="divChroma chromaJ2NonSelected" id="chroma28"
+                         onclick="selectChroma('chroma28', 'imgChroma28', 2)">
+                        <img id="imgChroma28"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="titreJ2">Couleur</div>
+                <input type="color" onchange="couleurJ2 = this.value"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./assets/characterList.js" charset="utf-8"></script>
+<script src="./admin/admin.js" charset="utf-8"></script>
+</body>
+</html>
