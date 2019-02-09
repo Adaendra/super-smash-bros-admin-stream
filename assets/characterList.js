@@ -1003,6 +1003,22 @@ var listePersonnages = [
 		]
 	},
 	{
+		"numero" : "65",
+		"nomEN" : "Piranha Plant",
+		"nomFR" : "Plante Pirahna",
+		"serie" : "Mario",
+		"chromas" : [
+			"Classic",
+			"Green",
+			"Yellow",
+			"Pink",
+			"Black",
+			"White",
+			"Purple",
+			"Blue"
+		]
+	},
+	{
 		"numero" : "66",
 		"nomEN" : "King K. Rool",
 		"nomFR" : "King K. Rool",
