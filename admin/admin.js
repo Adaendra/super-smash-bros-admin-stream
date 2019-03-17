@@ -34,6 +34,7 @@ function changeLangue(newLangue) {
         document.getElementById("libelleTitreMatch").innerHTML = "Titre match";
         document.getElementById("libelleButtonPreview").innerHTML = "Envoyer en preview";
         document.getElementById("libelleButtonStream").innerHTML = "Envoyer au stream";
+        document.getElementById("libelleButtonPresentation").innerHTML = "Envoyer à la présentation";
         document.getElementById("libelleLangue").innerHTML = "Langue";
         document.getElementById("libelleJoueur2").innerHTML = "Joueur 2";
         document.getElementById("libelleNomJoueur2").innerHTML = "Nom";
@@ -47,6 +48,7 @@ function changeLangue(newLangue) {
         document.getElementById("libelleTitreMatch").innerHTML = "Title match";
         document.getElementById("libelleButtonPreview").innerHTML = "Send to preview";
         document.getElementById("libelleButtonStream").innerHTML = "Send to stream";
+        document.getElementById("libelleButtonPresentation").innerHTML = "Send to presentation";
         document.getElementById("libelleLangue").innerHTML = "Language";
         document.getElementById("libelleJoueur2").innerHTML = "Player 2";
         document.getElementById("libelleNomJoueur2").innerHTML = "Name";
@@ -205,6 +207,29 @@ function sendStream() {
 function sendPreview() {
     socket.send(JSON.stringify({
         preview: {
+            nomJ1: nomJ1,
+            numPersoJ1: numPersoJ1,
+            nomPersoJ1: nomPersoJ1,
+            chromaPersoJ1: chromaPersoJ1,
+            universPersoJ1: universPersoJ1,
+            scoreJ1: scoreJ1,
+            couleurJ1: couleurJ1,
+            nomMatch: nomMatch,
+            bo: bo,
+            nomJ2: nomJ2,
+            numPersoJ2: numPersoJ2,
+            nomPersoJ2: nomPersoJ2,
+            chromaPersoJ2: chromaPersoJ2,
+            universPersoJ2: universPersoJ2,
+            scoreJ2: scoreJ2,
+            couleurJ2: couleurJ2
+        }
+    }));
+}
+
+function sendPresentation() {
+    socket.send(JSON.stringify({
+        presentation: {
             nomJ1: nomJ1,
             numPersoJ1: numPersoJ1,
             nomPersoJ1: nomPersoJ1,

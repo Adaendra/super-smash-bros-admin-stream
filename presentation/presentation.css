@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("./../assets/font/Oswald-Bold.ttf") format("ttf");
+}
+
+#body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+}
+
+#backgroundTriangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Panneau Gauche --- */
+.leftPanneau {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 960px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(205, 32, 31, 0.8);
+}
+
+#imgPersoJ1 {
+    max-width: 125%;
+    position: absolute;
+    top: 0%;
+    left: -12.5%;
+}
+#imgUniversJ1 {
+    width: 50%;
+}
+
+#nomJoueur1 {
+    position: absolute;
+    bottom: 118px;
+    left: -24px;
+    width: 105%;
+    height: 100px;
+    background-color: #131418;
+    color: #eeeeee;
+    transform: rotate(-4deg);
+    font-family: "Oswald-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#nomPersoJ1 {
+    position: absolute;
+    bottom: 114px;
+    right: 200px;
+    background-color: rgba(205, 32, 31, 1);
+    color: #eeeeee;
+    font-family: "Oswald-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: rotate(-4deg);
+    padding: 6px 25px;
+}
+
+/* --- Panneau Droit --- */
+.rightPanneau {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 960px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 126, 229, 0.8);
+}
+
+#imgPersoJ2 {
+    max-width: 125%;
+    position: absolute;
+    top: 0%;
+    left: -12.5%;
+}
+
+#imgUniversJ2 {
+    width: 50%;
+}
+
+
+#nomJoueur2 {
+    position: absolute;
+    bottom: 118px;
+    right: -24px;
+    width: 105%;
+    height: 100px;
+    background-color: #131418;
+    color: #eeeeee;
+    transform: rotate(-4deg);
+    font-family: "Oswald-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#nomPersoJ2 {
+    position: absolute;
+    bottom: 114px;
+    right: 200px;
+    background-color: rgba(0, 126, 229, 1);
+    color: #eeeeee;
+    font-family: "Oswald-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: rotate(-4deg);
+    padding: 6px 25px;
+}
+
