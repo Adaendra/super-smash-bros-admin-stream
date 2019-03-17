@@ -21,9 +21,13 @@ function changeLangue(newLangue) {
     if(langue == 'FR') {
         document.getElementById("persoJ1").innerHTML = document.getElementById("persoJ1").attributes.nomFR;
         document.getElementById("persoJ2").innerHTML = document.getElementById("persoJ2").attributes.nomFR;
+        nomPersoLJ1 = document.getElementById("persoJ1").attributes.nomFR;
+        nomPersoLJ2 = document.getElementById("persoJ2").attributes.nomFR;
     } else if(langue == 'EN') {
         document.getElementById("persoJ1").innerHTML = document.getElementById("persoJ1").attributes.nomEN;
         document.getElementById("persoJ2").innerHTML = document.getElementById("persoJ2").attributes.nomEN;
+        nomPersoLJ1 = document.getElementById("persoJ1").attributes.nomEN;
+        nomPersoLJ2 = document.getElementById("persoJ2").attributes.nomEN;
     }
 
     if(langue == 'FR') {
@@ -67,8 +71,10 @@ function choosePerso(perso) {
         document.getElementById("persoJ1").attributes.nomEN = perso.nomEN;
         if(langue == 'FR') {
             document.getElementById("persoJ1").innerHTML = perso.nomFR;
+            nomPersoLJ1 = perso.nomFR;
         } else if(langue == 'EN') {
             document.getElementById("persoJ1").innerHTML = perso.nomEN;
+            nomPersoLJ1 = perso.nomEN;
         }
 
         for (let i = 0; i < 8; i++) {
@@ -93,8 +99,10 @@ function choosePerso(perso) {
         document.getElementById("persoJ2").attributes.nomEN = perso.nomEN;
         if(langue == 'FR') {
             document.getElementById("persoJ2").innerHTML = perso.nomFR;
+            nomPersoLJ2 = perso.nomFR;
         } else if(langue == 'EN') {
             document.getElementById("persoJ2").innerHTML = perso.nomEN;
+            nomPersoLJ2 = perso.nomEN;
         }
 
         for (var i = 0; i < 8; i++) {
@@ -165,6 +173,7 @@ const socket = new WebSocket('ws://localhost:8080');
 let nomJ1 = "";
 let numPersoJ1 = "";
 let nomPersoJ1 = "";
+let nomPersoLJ1 = "";
 let chromaPersoJ1 = "";
 let universPersoJ1 = "";
 let scoreJ1 = 0;
@@ -176,6 +185,7 @@ let bo = 0;
 let nomJ2 = "";
 let numPersoJ2 = "";
 let nomPersoJ2 = "";
+let nomPersoLJ2 = "";
 let chromaPersoJ2 = "";
 let universPersoJ2 = "";
 let scoreJ2 = 0;
@@ -233,6 +243,7 @@ function sendPresentation() {
             nomJ1: nomJ1,
             numPersoJ1: numPersoJ1,
             nomPersoJ1: nomPersoJ1,
+            nomPersoLJ1: nomPersoLJ1,
             chromaPersoJ1: chromaPersoJ1,
             universPersoJ1: universPersoJ1,
             scoreJ1: scoreJ1,
@@ -242,6 +253,7 @@ function sendPresentation() {
             nomJ2: nomJ2,
             numPersoJ2: numPersoJ2,
             nomPersoJ2: nomPersoJ2,
+            nomPersoLJ2: nomPersoLJ2,
             chromaPersoJ2: chromaPersoJ2,
             universPersoJ2: universPersoJ2,
             scoreJ2: scoreJ2,

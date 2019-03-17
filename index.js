@@ -46,6 +46,7 @@ let preview_couleurJ2 = "#0000ff";
 let presentation_nomJ1 = "";
 let presentation_numPersoJ1 = "";
 let presentation_nomPersoJ1 = "";
+let presentation_nomPersoLJ1 = "";
 let presentation_chromaPersoJ1 = "";
 let presentation_universPersoJ1 = "";
 let presentation_scoreJ1 = 0;
@@ -57,6 +58,7 @@ let presentation_bo = 0;
 let presentation_nomJ2 = "";
 let presentation_numPersoJ2 = "";
 let presentation_nomPersoJ2 = "";
+let presentation_nomPersoLJ2 = "";
 let presentation_chromaPersoJ2 = "";
 let presentation_universPersoJ2 = "";
 let presentation_scoreJ2 = 0;
@@ -110,6 +112,7 @@ wss.on('connection', function connection(ws) {
             presentation_nomJ1 = dataJs.presentation.nomJ1;
             presentation_numPersoJ1 = dataJs.presentation.numPersoJ1;
             presentation_nomPersoJ1 = dataJs.presentation.nomPersoJ1;
+            presentation_nomPersoLJ1 = dataJs.presentation.nomPersoLJ1;
             presentation_chromaPersoJ1 = dataJs.presentation.chromaPersoJ1;
             presentation_universPersoJ1 = dataJs.presentation.universPersoJ1;
             presentation_scoreJ1 = dataJs.presentation.scoreJ1;
@@ -121,6 +124,7 @@ wss.on('connection', function connection(ws) {
             presentation_nomJ2 = dataJs.presentation.nomJ2;
             presentation_numPersoJ2 = dataJs.presentation.numPersoJ2;
             presentation_nomPersoJ2 = dataJs.presentation.nomPersoJ2;
+            presentation_nomPersoLJ2 = dataJs.presentation.nomPersoLJ2;
             presentation_chromaPersoJ2 = dataJs.presentation.chromaPersoJ2;
             presentation_universPersoJ2 = dataJs.presentation.universPersoJ2;
             presentation_scoreJ2 = dataJs.presentation.scoreJ2;
@@ -181,6 +185,7 @@ function formerJson() {
             nomJ1 : presentation_nomJ1,
             numPersoJ1 : presentation_numPersoJ1,
             nomPersoJ1 : presentation_nomPersoJ1,
+            nomPersoLJ1 : presentation_nomPersoLJ1,
             chromaPersoJ1 : presentation_chromaPersoJ1,
             universPersoJ1 : presentation_universPersoJ1,
             scoreJ1 : presentation_scoreJ1,
@@ -190,6 +195,7 @@ function formerJson() {
             nomJ2 : presentation_nomJ2,
             numPersoJ2 : presentation_numPersoJ2,
             nomPersoJ2 : presentation_nomPersoJ2,
+            nomPersoLJ2 : presentation_nomPersoLJ2,
             chromaPersoJ2 : presentation_chromaPersoJ2,
             universPersoJ2 : presentation_universPersoJ2,
             scoreJ2 : presentation_scoreJ2,
