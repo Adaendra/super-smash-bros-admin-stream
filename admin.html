@@ -14,9 +14,9 @@
     <div class="containerJ1" style="overflow: hidden;">
         <img id="imgFondJ1" style="position: absolute; top:25px; right:0; opacity: 0.4;"/>
         <div style="position: absolute; top:0; left:0; width:100%;">
-            <div class="nomJoueur1">Joueur 1</div>
+            <div class="nomJoueur1" id="libelleJoueur1">Joueur 1</div>
             <div>
-                <div class="titreJ1">Nom</div>
+                <div class="titreJ1" id="libelleNomJoueur1">Nom</div>
                 <input onchange="nomJ1 = this.value"/>
             </div>
             <div>
@@ -24,7 +24,7 @@
                 <input onchange="scoreJ1 = this.value"/>
             </div>
             <div onclick="selectPerso(1)">
-                <div class="titreJ1 btnPersonnage">Personnage</div>
+                <div class="titreJ1 btnPersonnage" id="libellePersonnageJoueur1">Personnage</div>
                 <div id="persoJ1"></div>
             </div>
             <div>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div>
-                <div class="titreJ1">Couleur</div>
+                <div class="titreJ1" id="libelleCouleurJoueur1">Couleur</div>
                 <input type="color" onchange="couleurJ1 = this.value"/>
             </div>
         </div>
@@ -73,7 +73,7 @@
 
     <div class="containerCommun">
         <div style="margin-top: 46px;">
-            <div class="titreCommun">Titre match</div>
+            <div class="titreCommun" id="libelleTitreMatch">Titre match</div>
             <input onchange="nomMatch = this.value"/>
         </div>
         <div>
@@ -81,19 +81,24 @@
             <input onchange="bo = this.value"/>
         </div>
         <div style="text-align: center">
-            <button onclick="sendPreview()" class="buttonCommun">Envoyer en preview</button>
+            <button onclick="sendPreview()" class="buttonCommun" id="libelleButtonPreview">Envoyer en preview</button>
         </div>
         <div style="text-align: center">
-            <button onclick="sendStream()" class="buttonCommun">Envoyer au stream</button>
+            <button onclick="sendStream()" class="buttonCommun" id="libelleButtonStream">Envoyer au stream</button>
+        </div>
+        <div>
+            <div class="titreCommun" id="libelleLangue">Langue</div>
+            <input type="radio" value="Français" name="langue" onchange="changeLangue('FR')" checked/>FR
+            <input type="radio" value="English" name="langue" onchange="changeLangue('EN')"/>EN
         </div>
     </div>
 
     <div class="containerJ2" style="overflow: hidden;">
         <img id="imgFondJ2" style="position: absolute; top:25px; right:0; opacity: 0.4;"/>
         <div style="position: absolute; top:0; left:0; width:100%;">
-            <div class="nomJoueur2">Joueur 2</div>
+            <div class="nomJoueur2" id="libelleJoueur2">Joueur 2</div>
             <div>
-                <div class="titreJ2">Nom</div>
+                <div class="titreJ2" id="libelleNomJoueur2">Nom</div>
                 <input onchange="nomJ2 = this.value"/>
             </div>
             <div>
@@ -101,7 +106,7 @@
                 <input onchange="scoreJ2 = this.value"/>
             </div>
             <div onclick="selectPerso(2)">
-                <div class="titreJ2 btnPersonnage">Personnage</div>
+                <div class="titreJ2 btnPersonnage" id="libellePersonnageJoueur2">Personnage</div>
                 <div id="persoJ2"></div>
             </div>
             <div>
@@ -142,7 +147,7 @@
                 </div>
             </div>
             <div>
-                <div class="titreJ2">Couleur</div>
+                <div class="titreJ2" id="libelleCouleurJoueur2">Couleur</div>
                 <input type="color" onchange="couleurJ2 = this.value"/>
             </div>
         </div>

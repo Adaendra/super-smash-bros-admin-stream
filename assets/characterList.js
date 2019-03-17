@@ -101,7 +101,7 @@ var listePersonnages = [
 		"nomFR" : "Bowser Jr.",
 		"serie" : "Mario",
 		"chromas" : [
-			"Junior",
+			"Classic",
 			"Larry",
 			"Roy",
 			"Wendy",
@@ -826,7 +826,7 @@ var listePersonnages = [
 			"Black",
 			"Orange",
 			"Blue",
-			"Lavender",
+			"Lavander",
 			"Yellow",
 			"Trunks"
 		]

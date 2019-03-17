@@ -1,11 +1,73 @@
+let langue = 'FR';
 let persoIndex;
+
+document.getElementById("persoJ1").attributes.nomFR = '';
+document.getElementById("persoJ2").attributes.nomFR = '';
+document.getElementById("persoJ1").attributes.nomEN = '';
+document.getElementById("persoJ2").attributes.nomEN = '';
+
+function changeLangue(newLangue) {
+    langue = newLangue;
+
+    let listeDivNomPerso = document.getElementsByClassName('nomPersonnage');
+    for(let d of listeDivNomPerso) {
+        if(langue == 'FR') {
+            d.innerHTML = d.attributes.nomFR
+        } else if(langue == 'EN') {
+            d.innerHTML = d.attributes.nomEN
+        }
+    }
+
+    if(langue == 'FR') {
+        document.getElementById("persoJ1").innerHTML = document.getElementById("persoJ1").attributes.nomFR;
+        document.getElementById("persoJ2").innerHTML = document.getElementById("persoJ2").attributes.nomFR;
+    } else if(langue == 'EN') {
+        document.getElementById("persoJ1").innerHTML = document.getElementById("persoJ1").attributes.nomEN;
+        document.getElementById("persoJ2").innerHTML = document.getElementById("persoJ2").attributes.nomEN;
+    }
+
+    if(langue == 'FR') {
+        document.getElementById("libelleJoueur1").innerHTML = "Joueur 1";
+        document.getElementById("libelleNomJoueur1").innerHTML = "Nom";
+        document.getElementById("libellePersonnageJoueur1").innerHTML = "Personnage";
+        document.getElementById("libelleCouleurJoueur1").innerHTML = "Couleur";
+        document.getElementById("libelleTitreMatch").innerHTML = "Titre match";
+        document.getElementById("libelleButtonPreview").innerHTML = "Envoyer en preview";
+        document.getElementById("libelleButtonStream").innerHTML = "Envoyer au stream";
+        document.getElementById("libelleLangue").innerHTML = "Langue";
+        document.getElementById("libelleJoueur2").innerHTML = "Joueur 2";
+        document.getElementById("libelleNomJoueur2").innerHTML = "Nom";
+        document.getElementById("libellePersonnageJoueur2").innerHTML = "Personnage";
+        document.getElementById("libelleCouleurJoueur2").innerHTML = "Couleur";
+    } else if(langue == 'EN') {
+        document.getElementById("libelleJoueur1").innerHTML = "Player 1";
+        document.getElementById("libelleNomJoueur1").innerHTML = "Name";
+        document.getElementById("libellePersonnageJoueur1").innerHTML = "Character";
+        document.getElementById("libelleCouleurJoueur1").innerHTML = "Color";
+        document.getElementById("libelleTitreMatch").innerHTML = "Title match";
+        document.getElementById("libelleButtonPreview").innerHTML = "Send to preview";
+        document.getElementById("libelleButtonStream").innerHTML = "Send to stream";
+        document.getElementById("libelleLangue").innerHTML = "Language";
+        document.getElementById("libelleJoueur2").innerHTML = "Player 2";
+        document.getElementById("libelleNomJoueur2").innerHTML = "Name";
+        document.getElementById("libellePersonnageJoueur2").innerHTML = "Character";
+        document.getElementById("libelleCouleurJoueur2").innerHTML = "Color";
+    }
+
+}
 
 function choosePerso(perso) {
     if (persoIndex == 1) {
         nomPersoJ1 = perso.nomEN;
         numPersoJ1 = perso.numero;
         universPersoJ1 = perso.serie;
-        document.getElementById("persoJ1").innerHTML = perso.nomFR;
+        document.getElementById("persoJ1").attributes.nomFR = perso.nomFR;
+        document.getElementById("persoJ1").attributes.nomEN = perso.nomEN;
+        if(langue == 'FR') {
+            document.getElementById("persoJ1").innerHTML = perso.nomFR;
+        } else if(langue == 'EN') {
+            document.getElementById("persoJ1").innerHTML = perso.nomEN;
+        }
 
         for (let i = 0; i < 8; i++) {
             document.getElementById("chroma1" + (i + 1)).setAttribute('chroma', "");
@@ -25,7 +87,13 @@ function choosePerso(perso) {
         nomPersoJ2 = perso.nomEN;
         numPersoJ2 = perso.numero;
         universPersoJ2 = perso.serie;
-        document.getElementById("persoJ2").innerHTML = perso.nomFR;
+        document.getElementById("persoJ2").attributes.nomFR = perso.nomFR;
+        document.getElementById("persoJ2").attributes.nomEN = perso.nomEN;
+        if(langue == 'FR') {
+            document.getElementById("persoJ2").innerHTML = perso.nomFR;
+        } else if(langue == 'EN') {
+            document.getElementById("persoJ2").innerHTML = perso.nomEN;
+        }
 
         for (var i = 0; i < 8; i++) {
             document.getElementById("chroma2" + (i + 1)).setAttribute('chroma', "");
@@ -174,6 +242,8 @@ listePersonnages.forEach(function (personnage, index) {
     let divNom = document.createElement("div");
     divNom.classList.add("nomPersonnage");
     divNom.innerHTML = personnage.nomFR;
+    divNom.attributes.nomFR = personnage.nomFR;
+    divNom.attributes.nomEN = personnage.nomEN;
     divPerso.appendChild(divNom);
 
     containerListePersonnages.appendChild(divPerso);
