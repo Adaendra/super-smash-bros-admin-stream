@@ -18,7 +18,7 @@ When you want to stop the server, just close the command prompt.
     - **D:** pour changer de disque
     - **cd ..** pour aller dans le dossier parent du dossier actuel
     - **cd projet** pour aller dans le dossier **projet** se trouvant dans le dossier actuel
-1. Utiliser la commande **node index.js"
+1. Utiliser la commande **node index.js**
 
 Quand cela est fait, vous pouvez ouvrir et utiliser admin.html, preview.html et stream.html
 
