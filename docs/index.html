@@ -4,31 +4,68 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="./Smash.svg"/>
     <title>Documentation | SmashStream</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./doc.css">
 </head>
 <body>
-    <div class="barMenuLeft">
-        <div>
-            <img src="./Smash.svg" class="logo"/>
-        </div>
-        <div class="boutonMenu">
-            <a href="https://imgur.com/user/RedFire1241/posts">
-                <div class="libelle">Gallerie</div>
-            </a>
-        </div>
+
+    <div id="menu">
+        <a href="#blockIntro">
+            <div>
+                Accueil
+            </div>
+        </a>
+        <a href="#description">
+            <div>
+                Description
+            </div>
+        </a>
+        <a href="#utilisation">
+            <div>
+                Utilisation
+            </div>
+        </a>
+        <a href="#evolutions">
+            <div>
+                évolutions
+            </div>
+        </a>
+        <a href="#questions">
+            <div>
+                Questions
+            </div>
+        </a>
+        <a href="https://imgur.com/user/RedFire1241/posts">
+            <div>
+                Gallerie
+            </div>
+        </a>
+        <a href="https://github.com/RedFire-1241/SmashStream">
+            <div>
+                Projet
+            </div>
+        </a>
     </div>
+
+    <div id="backgroundImg"></div>
     <div id="container">
-        <div class="blockDoc">
-            <h1>Description</h1>
-            <p>
-                <i>Qu'est-ce que SMASH Stream ?</i>
-            </p>
-            <p>
-                C'est un outil qui permet d'administrer de manière simple une vue affichant les informations concernant un match. (Nom joueur, score, nom du tour, personnage joué...)
-            </p>
-            <p>
-                Actuellement, l'outil est composé:
+        <div id="blockIntro">
+            <div id="titre">
+                SmashStream
+            </div>
+        </div>
+        <div id="description">
+            <div style="margin: 50px 20px; padding: 1px 30px; border-radius: 10px; background-color: rgba(77,77,77, 0.8);">
+                <h1>Description</h1>
+                <p>
+                    <i>Qu'est-ce que SMASH Stream ?</i>
+                </p>
+                <p>
+                    C'est un outil qui permet d'administrer de manière simple une vue affichant les informations concernant un match. (Nom joueur, score, nom du tour, personnage joué...)
+                </p>
+                <p>
+                    Actuellement, l'outil est composé:
                 <ul>
                     <li>D'une page d'admin : Permettant de gérer toutes les informations à envoyer à l'écran de Stream ou de Preview</li>
                     <li>D'une page de stream : Affichant les informations pour le stream. Intégrable facilement sur les logiciels de streaming comme OBS avec son fond vert.</li>
@@ -36,47 +73,51 @@
                     <li>D'une page de présentation : Pour présenter le prochain match entre les deux joueurs</li>
                     <li>D'un "English-mode" : Pour utiliser l'application en anglais et avec les noms des personnages en anglais</li>
                 </ul>
-            </p>
+                </p>
+            </div>
         </div>
-        <div class="blockDoc">
-            <h1>Utilisation</h1>
-            <p>
-                Pour pouvoir utiliser la dernière version du projet, il suffit de télécharger le projet en allant sur cette <a href="https://github.com/RedFire-1241/SmashStream">page</a>,
-                de cliquer sur "Clone or Download", puis sur "Download ZIP". Ou sinon, vous pouvez aller chercher une ancienne version ou une version alternative
-                <a href="https://github.com/RedFire-1241/SmashStream/releases">ici</a>.
-            </p>
-            <p>
-                Il vous faudra ensuite installer <a href="https://nodejs.org/en/">NodeJS</a>.
-            </p>
-            <p>
-                Puis, via l'interpréteur de commande de Node, se diriger dans le dossier du projet et lancer la commande "node index.js" pour lancer le serveur.
-            </p>
-            <p>
-                Vous n'avez plus qu'à utiliser les pages "admin", "stream" et "preview" avec votre navigateur.
-            </p>
-            <p style="text-align: center;">
-                <i>Un tutoriel vidéo arrivera prochainement.</i>
-            </p>
+        <div id="utilisation">
+            <div style="margin: 50px 20px; padding: 1px 30px; border-radius: 10px; background-color: rgba(77,77,77, 0.8);">
+                <h1>Utilisation</h1>
+                <p>
+                    Pour pouvoir utiliser la dernière version du projet, il suffit de télécharger le projet en allant sur cette <a href="https://github.com/RedFire-1241/SmashStream">page</a>,
+                    de cliquer sur "Clone or Download", puis sur "Download ZIP". Ou sinon, vous pouvez aller chercher une ancienne version ou une version alternative
+                    <a href="https://github.com/RedFire-1241/SmashStream/releases">ici</a>.
+                </p>
+                <p>
+                    Il vous faudra ensuite installer <a href="https://nodejs.org/en/">NodeJS</a>.
+                </p>
+                <p>
+                    Puis, via l'interpréteur de commande de Node, se diriger dans le dossier du projet et lancer la commande "node index.js" pour lancer le serveur.
+                </p>
+                <p>
+                    Vous n'avez plus qu'à utiliser les pages "admin", "stream" et "preview" avec votre navigateur.
+                </p>
+                <p style="text-align: center;">
+                    <i>Un tutoriel vidéo arrivera prochainement.</i>
+                </p>
+            </div>
         </div>
-        <div class="blockDoc">
-            <h1>Futures évolutions</h1>
-            <ul>
-                <li>Mode 2 v 2</li>
-                <li>Mode Présentation 2 v 2</li>
-            </ul>
+        <div id="evolutions">
+            <div style="margin: 50px 20px; padding: 1px 30px; border-radius: 10px; background-color: rgba(77,77,77, 0.8);">
+                <h1>Futures évolutions</h1>
+                <ul>
+                    <li>Mode 2 v 2</li>
+                    <li>Mode Présentation 2 v 2</li>
+                </ul>
+            </div>
         </div>
-        <div class="blockDoc">
-            <h1>Customisation / Questions</h1>
-            <p>
-                Si vous avez des questions ou des suggestions, n'hésitez pas à me joindre via <a href="https://twitter.com/R3D_Fire">mon twitter</a>.
-            </p>
-            <p>
-                <a href="https://twitter.com/R3D_Fire">Idem</a> pour des demandes de customisation de layout.
-            </p>
+        <div id="questions">
+            <div style="margin: 50px 20px; padding: 1px 30px; border-radius: 10px; background-color: rgba(77,77,77, 0.8);">
+                <h1>Customisation / Questions</h1>
+                <p>
+                    Si vous avez des questions ou des suggestions, n'hésitez pas à me joindre via <a href="https://twitter.com/R3D_Fire">mon twitter</a>.
+                </p>
+                <p>
+                    <a href="https://twitter.com/R3D_Fire">Idem</a> pour des demandes de customisation de layout.
+                </p>
+            </div>
         </div>
     </div>
-    <script>
-        document.getElementById('container').style.width = (window.innerWidth - 200) + "px";
-    </script>
 </body>
 </html>

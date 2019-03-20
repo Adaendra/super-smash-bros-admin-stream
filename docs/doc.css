@@ -1,79 +1,147 @@
-@font-face {
-    font-family: 'icomoon';
-    src:  url('./../assets/font/icomoon/fonts/icomoon.eot?sz538m');
-    src:  url('./../assets/font/icomoon/fonts/icomoon.eot?sz538m#iefix') format('embedded-opentype'),
-    url('./../assets/font/icomoon/fonts/icomoon.ttf?sz538m') format('truetype'),
-    url('./../assets/font/icomoon/fonts/icomoon.woff?sz538m') format('woff'),
-    url('./../assets/font/icomoon/fonts/icomoon.svg?sz538m#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-BODY {
-    background-image: linear-gradient(to right, rgba(0, 132, 255, 1), rgba(0, 132, 255, 0.8));
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-weight: 500;
+body {
+    background-color: rgba(77,77,77, 1);
     overflow: hidden;
+    cursor: default;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
 }
 
-.barMenuLeft {
+
+#menu {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-image: linear-gradient(to right, rgba(21, 101, 192, 0.8), rgba(21, 101, 192, 1));
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(33,33,33 ,0.8);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+#menu div {
+    display: inline-block;
+    opacity: 0.8;
+    padding: 5px 15px;
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+#menu div:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
 }
 
 #container {
     position: absolute;
-    top: 0;
-    left: 200px;
-    min-width: 850px;
-    width: 1000px;
-    padding: 10px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    color: #eeeeee;
+    padding-right: 17px;
 }
 
-.blockDoc {
-    background-color: #eeeeee;
-    color: #131418;
-    width: 98%;
-    padding : 1px 10px 5px 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    user-select: none;
-    cursor: default;
+#container a {
+    color: #eeeeee;
+    font-style: italic;
 }
 
-.logo {
+h1 {
+    font-family: 'Oswald', sans-serif;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+p, ul, li {
+    font-family: 'Roboto', sans-serif;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+#backgroundImg{
+    background-image: url('./fond.jpg');
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: blur(4px);
+    opacity: 0.5;
+    z-index: 0;
 }
 
-.boutonMenu {
+#titre {
+    width: 500px;
+    border: solid #eeeeee 5px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    width: 100%;
-    user-select: none;
-    cursor: pointer;
-    background-image: linear-gradient(to right, rgba(13,71,161 ,0.8), rgba(13,71,161 ,1));
+    font-weight: bold;
+    color: #eeeeee;
+    margin: auto;
+    margin-top: 25%;
     padding: 10px 0px;
 }
 
-.boutonMenu:hover {
-    box-shadow: 2px 2px 10px -5px rgba(200, 200, 200, 0.8);
+#blockIntro {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
-.barMenuLeft a {
-    color: #eeeeee;
-    text-decoration: none;
-    user-select: none;
+#description {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 1;
 }
 
-.libelle {
-    font-size: 14px;
-    text-transform: uppercase;
+#utilisation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 200%;
+    left: 0px;
+    z-index: 1;
 }
 
+#evolutions {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 300%;
+    left: 0px;
+    z-index: 1;
+}
+
+#questions {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 400%;
+    left: 0px;
+    z-index: 1;
+}
