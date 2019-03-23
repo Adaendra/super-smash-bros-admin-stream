@@ -12,7 +12,7 @@ let stream_scoreJ1 = 0;
 let stream_couleurJ1 = "#ff0000";
 
 let stream_nomMatch = "";
-let stream_bo = 0;
+let stream_bo = 1;
 
 let stream_nomJ2 = "";
 let stream_numPersoJ2 = "";
