@@ -21,6 +21,32 @@ BODY {
     padding: 0;
 }
 
+#barreRecherche {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(38,50,56 ,1);
+    text-align: center;
+}
+
+#iptRecherche {
+    border: none;
+    background-color: transparent;
+    border-bottom: rgba(180,180,180,0.7) 1px solid;
+    color: rgba(220,220,220,1);
+    font-size: 25px;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.icone-recherche {
+    color: rgba(220,220,220,1);
+    font-size: 30px;
+}
+
+.caseInvisible {
+    display: none !important;
+}
+
 #containerListePersonnages {
     height: auto;
     width: auto;
